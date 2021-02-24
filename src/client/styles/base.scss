@@ -1,0 +1,85 @@
+main {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    min-height: 100%;
+    display: inline;
+    background-size: cover;
+    padding: 100px;
+    padding-top: 40px;
+  }
+  
+  img {
+    max-width: 100%;
+    align-content: center;
+    max-height: fit-content;
+    display: block;
+    margin: 0 auto;
+    margin-left: 40px;
+    object-fit: cover;
+    padding-bottom: 10;
+    border-radius: 15px 15px 15px 15px;
+  }
+  
+  #image {
+    padding-bottom: 60px;
+  }
+  .button {
+    background-color: rgb(68, 48, 105);
+    color: white;
+    padding: 10px 32px;
+    margin: 50px;
+    margin-left: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  
+  .first {
+    position: relative;
+    top: 10px;
+    width: 90%;
+    min-height: 1500px;
+    font-size: 18px;
+    align-content: center;
+    
+  }
+  
+  div {
+    padding: 12px;
+  }
+  
+  .text {
+    font-size: 18px;
+    color: white;
+  }
+  #Destination{
+    font-size: 18px;
+    outline: none;
+  }
+  #sDate{
+    font-size: 18px;
+  }
+  
+  #sDate.sub-menu li:hover a {
+    display: block;
+  }
+  
+  #eDate{
+    font-size: 18px;
+    outline: none;
+  }
+  
+  h1 {
+    color:black;
+    padding: 10px;
+    font-size: 58px;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  

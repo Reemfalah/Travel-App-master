@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel App - Udacity</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Travel App</h1>
+        </header>
+        <main class = "background">
+            <section class ="first">
+                    <p class = "text">Destination: </p>
+                    <input id="Destination"
+                           placeholder="Enter valid zipcode or city"
+                           type="text">
+
+                    <p class = "text" >Start Date: </p>
+                    <input id="sDate"
+                           placeholder="dd/mm/yy"
+                           type="date">
+
+                    <p class = "text" >End Date: </p>
+                    <input id="eDate"
+                           placeholder="dd/mm/yy"
+                           type="date">
+
+                    <button class = "button" onClick = "Client.formHandler()" type="button" style=" outline: 0 none;">Submit</button> 
+                    <button id = "remove" class = "button" type="button" style=" outline: 0 none;">Remove Trip</button>
+                    <br><br>
+                    <p><div id="latitude" style = 'display: none;'></div></p>
+                    <p><div id="longitude" style =  'display: none;'></div></p>
+                    <p >Country Code:<div id="country" ></div></p>
+                    <p style = "display: none;"><div id="placeName" style = "display: none;"></div></p>
+                    <p>Countdown:<div id="countdown" ></div></p>
+                    <p>Length of Trip:<div id="LoT"></div></p>
+                    <p> Weather:<br><ul id="weather" style =  'line-height: 50px; text-align: justify'></ul></p><br>
+                    <p style = "display: none;"><div id="image" class = "picz"></div></pstyle = "display: none;">
+            </section>
+            <br>
+
+            <footer>
+                <div class = "footer">
+                    © 2021
+                </div>
+              </footer>
+
+        </main>
+
+        <script>
+            window.addEventListener('load', () => {
+                document.getElementById('removeTripButton').addEventListener('click', () => Client.buttonHandler());
+            });
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+
+    </body>
+</html>
+
