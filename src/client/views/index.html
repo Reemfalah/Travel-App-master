@@ -50,8 +50,9 @@
         </main>
 
         <script>
+            window.onload=function(){
             window.addEventListener('load', () => {
-                document.getElementById('removeTripButton').addEventListener('click', () => Client.buttonHandler());
+                document.getElementById('removeTripButton').addEventListener('click', () => Client.submitHandler());
             });
             // Check that service workers are supported
             if ('serviceWorker' in navigator) {
@@ -60,6 +61,7 @@
                     navigator.serviceWorker.register('/service-worker.js');
                 });
             }
+        }
         </script>
 
     </body>
